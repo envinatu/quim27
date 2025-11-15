@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://envinatu.github.io/bio27/sitemap.xml
