@@ -1,0 +1,1702 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Marcelo Amores">
+<meta name="description" content="Sitio web interactivo de Química para Bachillerato General Unificado (BGU). Ecuador 2025-2026-2027">
+
+<title>Modelo atómico: modelo mecánico-cuántico de la materia (1) – QUÍMICA 2025-2026-2027</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../Q1-U1-modelo_atomico/1-1-06-modelo_atomico_modelo_mecanico_cuantico_de_la_materia_ii.html" rel="next">
+<link href="../Q1-U1-modelo_atomico/1-1-04-las_reacciones_quimicas_y_sus_ecuaciones_masa_atomica.html" rel="prev">
+<link href="../images/Icono_E.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-b758ccaa5987ceb1b75504551e579abf.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-893ac1708e0fa48555d1e302307ecba9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-eee75197997e4feb549e5e87c528aa17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-893ac1708e0fa48555d1e302307ecba9.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No se han encontrado resultados",
+    "search-matching-documents-text": "documentos encontrados",
+    "search-copy-link-title": "Copiar el enlace en la búsqueda",
+    "search-hide-matches-text": "Ocultar resultados adicionales",
+    "search-more-match-text": "resultado adicional en este documento",
+    "search-more-matches-text": "resultados adicionales en este documento",
+    "search-clear-button-title": "Borrar",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancelar",
+    "search-submit-button-title": "Enviar",
+    "search-label": "Buscar"
+  }
+}</script>
+<!-- Verificación de Google -->
+
+<meta name="google-site-verification" content="EYveEP5I9oi6m-r8Qa_Fett47y3RJFqSizYYvf7G1RM">
+
+
+
+<!-- Canonical URL dinámico -->
+
+<link rel="canonical" link:"{{="" page.url="" |="" absolute_url="" }}"="">
+
+
+
+<script src="../site_libs/quarto-diagram/mermaid.min.js"></script>
+<script src="../site_libs/quarto-diagram/mermaid-init.js"></script>
+<link href="../site_libs/quarto-diagram/mermaid.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../images/envinatu1.png" alt="Envinatu logo." class="navbar-logo light-content">
+    <img src="../images/envinatu1.png" alt="Envinatu logo." class="navbar-logo dark-content">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Buscar"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Navegación de palanca" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../index.html" aria-current="page"> 
+<span class="menu-text">Inicio</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/bio27/"> 
+<span class="menu-text">Biología</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/quim27/"> 
+<span class="menu-text">Química</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/pedagogia"> 
+<span class="menu-text">Educación</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/envibooks"> 
+<span class="menu-text">Literatura</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/rubick"> 
+<span class="menu-text">Ludociencia</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/blog"> 
+<span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="https://envinatu.github.io/amores"> 
+<span class="menu-text">Sobre Mi</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/quim27/blob/main/docs/QÍMICA-2025-2026-2027.pdf"> <i class="bi bi-filetype-pdf" role="img" aria-label="Ver PDF">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu/quim27/blob/main/docs/QUÍMICA-2025-2026-2027.epub"> <i class="bi bi-journal-bookmark-fill" role="img" aria-label="Ver eBook">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/"> <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu"> <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Alternar modo oscuro"><i class="bi"></i></a>
+  <a href="" class="quarto-reader-toggle quarto-navigation-tool px-1" onclick="window.quartoToggleReader(); return false;" title="Alternar modo lector">
+  <div class="quarto-reader-toggle-btn">
+  <i class="bi"></i>
+  </div>
+</a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Q1-U1-modelo_atomico/1-1-01-modelo_atomico--modelo_atomico_antecedentes.html">Q1-U1 Modelo atómico</a></li><li class="breadcrumb-item"><a href="../Q1-U1-modelo_atomico/1-1-05-modelo_atomico_modelo_mecanico_cuantico_de_la_materia_i.html"><span class="chapter-title">Modelo atómico: modelo mecánico-cuántico de la materia (1)</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Alternar barra lateral" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Presentación</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Q1-U1 Modelo atómico</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U1-modelo_atomico/1-1-01-modelo_atomico--modelo_atomico_antecedentes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Modelo atómico: antecedentes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U1-modelo_atomico/1-1-02-modelo_de_rutherford_del_atomo_nuclear.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Modelo de Rutherford del átomo nuclear</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U1-modelo_atomico/1-1-03-teoria_de_bohr_del_atomo_de_hidrogeno.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Teoría de Bohr del átomo de hidrógeno</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U1-modelo_atomico/1-1-04-las_reacciones_quimicas_y_sus_ecuaciones_masa_atomica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Las reacciones químicas y sus ecuaciones: masa atómica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U1-modelo_atomico/1-1-05-modelo_atomico_modelo_mecanico_cuantico_de_la_materia_i.html" class="sidebar-item-text sidebar-link active"><span class="chapter-title">Modelo atómico: modelo mecánico-cuántico de la materia (1)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U1-modelo_atomico/1-1-06-modelo_atomico_modelo_mecanico_cuantico_de_la_materia_ii.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Modelo atómico: modelo mecánico-cuántico de la materia (2)</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U1-modelo_atomico/1-1-07-los_isotopos_radiactivos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Modelo atómico: modelo mecánico-cuántico de la materia (2)</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Q1-U2 Tabla periodica y enlace quimico</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-01-tabla_periodica_y_enlace_quimico--los_atomos_y_la_tabla_periodica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Los átomos y la tabla periódica</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-02-la_tabla_periodica_el_nombre_de_los_elementos_y_sus_simbolos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">La tabla periódica: el nombre de los elementos y sus símbolos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-03-el_enlace_quimico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">El enlace químico</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-04-tipos_de_enlaces_quimicos.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tipos de enlaces químicos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-05-sistemas_dispersos_soluciones_electroliticas_o_ionicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sistemas dispersos: soluciones electrolíticas o iónicas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-06-enlace_covalente.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Enlace covalente</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-07-sistemas_dispersos_y_polaridad_de_los_enlaces.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Sistemas dispersos y polaridad de los enlaces</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-08-enlace_metalico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Enlace metálico</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-09-propiedades_fisicas_de_los_compuestos_covalentes.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Propiedades físicas de los compuestos covalentes</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U2-tabla_periodica_y_enlace_quimico/1-2-10-fuerzas_intermoleculares.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Fuerzas intermoleculares</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Q1-U3 Compuestos quimicos</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Alternar sección">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U3-compuestos_quimicos/1-3-01-compuestos_quimicos--formacion_de_compuestos_quimicos_posibilidad_de_formacion.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Formación de compuestos químicos: posibilidad de formación</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U3-compuestos_quimicos/1-3-02-las_reacciones_evidencia_de_un_cambio_quimico.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Las reacciones: evidencia de un cambio químico</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U3-compuestos_quimicos/1-3-03-tipos_de_reacciones_quimicas.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Tipos de reacciones químicas</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U3-compuestos_quimicos/1-3-04-las_reacciones_quimicas_y_sus_ecuaciones.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">Las reacciones químicas y sus ecuaciones</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U3-compuestos_quimicos/1-3-05-ciencia_tecnologia_y_sociedad.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1-3-05-ciencia_tecnologia_y_sociedad.html</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Q1-U3-compuestos_quimicos/1-3-06-como_se_investiga_en_quimica.html" class="sidebar-item-text sidebar-link"><span class="chapter-title">1-3-06-como_se_investiga_en_quimica.html</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Tabla de contenidos</h2>
+   
+  <ul>
+  <li><a href="#principio-de-complementariedad" id="toc-principio-de-complementariedad" class="nav-link active" data-scroll-target="#principio-de-complementariedad">Principio de complementariedad</a></li>
+  <li><a href="#la-dualidad-del-electrón" id="toc-la-dualidad-del-electrón" class="nav-link" data-scroll-target="#la-dualidad-del-electrón">La dualidad del electrón</a></li>
+  <li><a href="#principio-de-incertidumbre" id="toc-principio-de-incertidumbre" class="nav-link" data-scroll-target="#principio-de-incertidumbre">Principio de incertidumbre</a></li>
+  <li><a href="#los-números-cuánticos" id="toc-los-números-cuánticos" class="nav-link" data-scroll-target="#los-números-cuánticos">Los números cuánticos</a></li>
+  <li><a href="#números-cuánticos" id="toc-números-cuánticos" class="nav-link" data-scroll-target="#números-cuánticos">Números cuánticos</a></li>
+  <li><a href="#ecuación-de-schrödinger" id="toc-ecuación-de-schrödinger" class="nav-link" data-scroll-target="#ecuación-de-schrödinger">Ecuación de Schrödinger</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../Q1-U1-modelo_atomico/1-1-01-modelo_atomico--modelo_atomico_antecedentes.html">Q1-U1 Modelo atómico</a></li><li class="breadcrumb-item"><a href="../Q1-U1-modelo_atomico/1-1-05-modelo_atomico_modelo_mecanico_cuantico_de_la_materia_i.html"><span class="chapter-title">Modelo atómico: modelo mecánico-cuántico de la materia (1)</span></a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-title">Modelo atómico: modelo mecánico-cuántico de la materia (1)</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+    <div>
+    <div class="quarto-title-meta-heading">Fecha de publicación</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">noviembre, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/videoseries?list=PLw04BCyJR0cXfU_vv5R7VrSg9nPRdd72d" frameborder="0" allowfullscreen="">
+</iframe>
+<div id="plan" class="callout callout-style-default callout-note callout-titled" title="Completar esta clase te permitirá:">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Nota</span>Completar esta clase te permitirá:
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p><strong>CN.Q.5.1.5.</strong> Observar y aplicar el modelo mecánico-cuántico de la materia en la estructuración de la configuración electrónica de los átomos considerando la dualidad del electrón, los números cuánticos, los tipos de orbitales y la regla de Hund.</p>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/profe_Amores.jpg" class="img-fluid figure-img"></p>
+<figcaption>Profesor: Marcelo Amores Palma</figcaption>
+</figure>
+</div>
+<hr>
+<p>La luz parece algo cotidiano: ilumina la habitación, revela colores, delimita formas. Sin embargo, cuando se observa con detenimiento, comienza a comportarse como un fenómeno sorprendente. ¿De qué está hecha realmente? Si se la piensa como una onda, se desplaza sin necesidad de un medio; si se la considera como partículas llamadas fotones, transporta paquetes discretos de energía. En ambos casos, la luz desafía la intuición. Incluso los colores, que parecen tan obvios, esconden un comportamiento físico complejo. Por ejemplo, el negro no es un color en el sentido estricto del espectro: es la ausencia de luz reflejada. Esa ausencia se interpreta como un “color” sólo porque el cerebro traduce la falta de señales en una experiencia visual coherente. Empezar a cuestionar estos detalles abre la puerta para comprender cómo se comportan los electrones, por qué requieren números cuánticos para describirse y cómo la materia revela su estructura cuando se la observa a escalas diminutas. Cada misterio inicial se convierte en una invitación a mirar el átomo con nuevos ojos.</p>
+<hr>
+<p>El artículo que Bohr escribió en 1913, explicando su modelo atómico, no fue bien recibido por la comunidad científica; el mismo Thomson difería con las ideas propuestas por Bohr: “parece necesario introducir en las leyes en cuestión una cantidad extraña a la electrodinámica clásica, es decir, la constante de Planck, o los cuantos elementales de acción como frecuentemente se llama”.</p>
+<p>La Mecánica cuántica nació con Bohr, quien comprendió que las leyes clásicas de la Física no podían explicar de forma adecuada la estructura de un átomo nuclear; por tanto, tuvo que fusionar viejas ideas de la Mecánica de Newton con las nuevas propuestas de Planck y sus cuantos.</p>
+<p>Aunque en principio esta mezcla de ideas expuestas por Bohr estaba incompleta y en parte errada, sirvió de base para posteriores investigaciones.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    A[🪐 TEORÍA DE BOHR&lt;br/&gt;Modelo Atómico Cuántico] --&gt; B[⚛️ FÍSICA CLÁSICA&lt;br/&gt;Newton + Electrodinámica de Maxwell]
+    A --&gt; C[🔬 FÍSICA CUÁNTICA&lt;br/&gt;Hipótesis de Planck]
+    
+    B --&gt; D[✅ CONDICIÓN:&lt;br/&gt;Átomo ESTABLE&lt;br/&gt;No emite radiación&lt;br/&gt;No libera fotones&lt;br/&gt;&lt;br/&gt;📊 Estado: Órbita fija]
+    
+    C --&gt; E[🌟 CONDICIÓN:&lt;br/&gt;Átomo ACTIVO&lt;br/&gt;Emite/Absorbe radiación&lt;br/&gt;Espectros luminosos&lt;br/&gt;&lt;br/&gt;🎯 Salto cuántico entre órbitas]
+    
+    style A fill:#1565c0,color:#ffffff,stroke:#0d47a1,stroke-width:3px
+    style B fill:#2e7d32,color:#ffffff,stroke:#1b5e20,stroke-width:2px
+    style C fill:#6a1b9a,color:#ffffff,stroke:#4a148c,stroke-width:2px
+    style D fill:#ff9800,color:#000000,stroke:#ef6c00,stroke-width:2px
+    style E fill:#c2185b,color:#ffffff,stroke:#880e4f,stroke-width:2px
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mermaid_20251126_a1b7ac.png" class="img-fluid figure-img"></p>
+<figcaption>Bohr fusionó audazmente la física clásica con la cuántica: Newton explica las órbitas estacionarias, Planck los saltos energéticos. Una síntesis revolucionaria que, aunque inicialmente criticada, reveló la naturaleza dual del átomo y fundó la mecánica cuántica.</figcaption>
+</figure>
+</div>
+<section id="principio-de-complementariedad" class="level2">
+<h2 class="anchored" data-anchor-id="principio-de-complementariedad">Principio de complementariedad</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mermaid_20251126_c26544.png" class="img-fluid figure-img"></p>
+<figcaption>La explicación de los espectros luminosos y la luz se debatía entre dos teorías. 1. Teoría ondulatoria: La luz es una onda, por eso un rayo de luz puede superponerse a otro, igual como lo hacen las olas del mar. 2. Teoría corpuscular: La luz está formada por corpúsculos llamados fotones, por eso pude viajar en el espacio vacío, en paquetes de energía llamados cuantos.</figcaption>
+</figure>
+</div>
+<p>Albert Einstein era partidario de los fotones. Luego de sus investigaciones con rayos X, concluyó que la luz, cuando viaja a través de un medio, se comporta como ondas ocupando todo el espacio, y, cuando lo hace en el espacio vacío o choca contra un cuerpo, se comporta como partícula. Bohr llamo a esta propiedad onda-partícula “ principio de complementariedad ”. Así nace la Mecánica cuántica, que se encarga de explicar cómo funciona el universo con objetos y espacios más pequeños que un átomo.</p>
+<p>Estrategia para resolver problemas. Cuando te enfrentes a un problema de química, debes seguir algunos pasos importantes. Comprender el problema. Si no lo comprendes, no vas a poder resolverlo. Para tener éxito, te recomendamos lo siguiente: leer adecuadamente el problema y replantearlo con tus propias palabras.</p>
+</section>
+<section id="la-dualidad-del-electrón" class="level2">
+<h2 class="anchored" data-anchor-id="la-dualidad-del-electrón">La dualidad del electrón</h2>
+<p>La teoría de la relatividad de Einstein manifestaba que la materia era una forma concentrada de energía que se puede calcular mediante la fórmula:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2543703042.png" class="img-fluid figure-img"></p>
+<figcaption>E = m c al cuadrado Es decir, Energía es igual a masa por velocidad de la luz.</figcaption>
+</figure>
+</div>
+<p>El científico Louis de Broglie (Francia, 1892-1987), luego de analizar la teoría de Einstein, propuso que, si la materia es energía y si la luz era a la vez onda y partícula, el electrón, que era una partícula, podía también ser una onda. Es decir, el electrón, por poseer masa y movimiento, se comporta como un corpúsculo, pero también tiene una longitud de onda, por eso puede difractarse, es decir, aparecer en varias regiones del espacio al mismo tiempo.</p>
+<p>Broglie extendió esta propiedad de onda-partícula a todas las partículas subatómicas, y proporcionó la ecuación con la cual se puede medir su longitud de onda.</p>
+<div class="cell" data-layout-align="default">
+<div class="cell-output-display">
+<div>
+<p></p><figure class="figure"><p></p>
+<div>
+<pre class="mermaid mermaid-js">graph TD
+    node1[Longitud de onda λ]
+    
+    node1 --&gt; node2[Definición: Distancia entre dos crestas de una onda]
+    node1 --&gt; node3[Ecuación de De Broglie]
+    
+    node2 --&gt; node4[Ejemplo: 2.5 nanómetros&lt;br/&gt;Longitud de onda corta&lt;br/&gt;(Ultravioleta/Rayos X)]
+    node3 --&gt; node6[Fórmula: λ = h/mv]
+    
+    node6 --&gt; node7[λ = longitud de onda]
+    node6 --&gt; node8[h = constante de Planck]
+    node6 --&gt; node9[m = masa de la partícula]
+    node6 --&gt; node10[v = velocidad de la partícula]
+    
+    node8 --&gt; node11[Valor: 6.62 × 10⁻³⁴ J·s]
+    
+    style node1 fill:#2c7bb6,color:white,font-weight:bold
+    style node2 fill:#abd9e9
+    style node3 fill:#fdae61
+    style node4 fill:#a6d96a
+    style node6 fill:#ffffbf
+    style node7 fill:#d7191c,color:white
+    style node8 fill:#d7191c,color:white
+    style node9 fill:#d7191c,color:white
+    style node10 fill:#d7191c,color:white
+    style node11 fill:#a6d96a
+</pre>
+</div>
+<p></p></figure><p></p>
+</div>
+</div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/mermaid_20251126_421198.png" class="img-fluid figure-img"></p>
+<figcaption>Este diagrama ilustra el concepto de longitud de onda como la distancia entre crestas sucesivas de una onda y muestra cómo la ecuación de de Broglie relaciona esta magnitud con el comportamiento ondulatorio de las partículas. Se destacan los elementos fundamentales: la longitud de onda λ, la constante de Planck h, la masa m y la velocidad v, evidenciando la naturaleza dual materia-onda descrita por la mecánica cuántica.</figcaption>
+</figure>
+</div>
+</section>
+<section id="principio-de-incertidumbre" class="level2">
+<h2 class="anchored" data-anchor-id="principio-de-incertidumbre">Principio de incertidumbre</h2>
+<p>En 1926, el físico alemán Werner Heisenberg (1901-1976) sostuvo que la doble naturaleza de la materia limita determinar con exactitud y de forma simultánea la posición y energía de un electrón en un instante específico. Únicamente se puede considerar la probabilidad de encontrar el electrón en cierta región del espacio que rodea al núcleo. Por consiguiente, no es apropiado imaginar los electrones en movimiento en órbitas definidas, como pensaba Bohr.</p>
+<p>Los orbitales son regiones de espacio alrededor de un núcleo atómico donde hay mayor probabilidad de encontrar un electrón. El electrón ocupa todo ese espacio en el mismo momento.</p>
+</section>
+<section id="los-números-cuánticos" class="level2">
+<h2 class="anchored" data-anchor-id="los-números-cuánticos">Los números cuánticos</h2>
+<p>Para los científicos estaba claro que la dualidad onda-partícula del electrón mostraba que no se hallaban girando alrededor del núcleo en órbitas planas, sino que vibraban en espacios tridimensionales 3D, a los que se les dio el nombre de orbitales</p>
+<p>Erwin Schrödinger (Austria, 1887-1961) se propuso encontrar la manera de relacionar la energía que tienen el electrón, como partícula con masa, con la onda que describe en su orbital, y para esto incorporó un descriptor matemático o función de onda (psi) en una ecuación que describe el comportamiento energético de las partículas subatómicas.</p>
+<p>Función de onda = descriptor matemático de comportamiento dual, orbital</p>
+<p>El cuadrado de la función de onda = zona con mayor probabilidad de encontrar un electrón</p>
+<p>Para describir la función de onda, solo se utilizan variables que usan números enteros. Estas variables se denominan números cuánticos y ellos nos permiten describir la forma tridimensional de los orbitales y su estado energético.</p>
+<p>Schrödinger propuso tres números cuánticos: número cuántico principal (n), angular (l) y número cuántico magnético (m sub l). El cuarto número cuántico de spin (m sub s) fue propuesto después, cuando se conoció que en cada orbital podían encontrarse 2 electrones.</p>
+</section>
+<section id="números-cuánticos" class="level2">
+<h2 class="anchored" data-anchor-id="números-cuánticos">Números cuánticos</h2>
+<ul>
+<li>Número cuántico principal, n</li>
+</ul>
+<p>Determina el número de niveles de energía en un átomo. Puede tomar los valores uno, dos, tres, y así sucesivamente. Para los elementos conocidos se requieren siete niveles energéticos. El nivel menos energético corresponde a n igual a uno y el más energético corresponde a n igual a siete. A mayor valor de n, el electrón tiene mayor energía y está menos atado al núcleo. El número total de electrones en un nivel energético viene dado por la expresión dos n al cuadrado, en donde n corresponde al nivel de energía.</p>
+<ul>
+<li>Número cuántico secundario o azimutal, l</li>
+</ul>
+<p>Determina los subniveles de energía que tiene cada nivel. Su valor depende del número cuántico principal. Puede tomar valores desde cero hasta n menos uno. A cada valor del número cuántico azimutal le corresponde una forma de orbital que se identifica con una letra minúscula: s, de sharp; p, de principal; d, de difuso; y f, de fundamental.</p>
+<ul>
+<li>Número cuántico magnético, m sub l</li>
+</ul>
+<p>Indica la orientación del orbital en el espacio. Toma valores enteros que van desde menos l hasta más l, incluyendo el cero. En general, el número de orbitales de un subnivel dado es igual a dos l más uno.</p>
+<ul>
+<li>Número cuántico de spin, m sub s</li>
+</ul>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-4272100013.png" class="img-fluid figure-img"></p>
+<figcaption>Indica la orientación magnética del electrón, generando un campo electromagnético. Este número toma los valores de más un medio y menos un medio, y se representan como una flecha hacia arriba y una flecha hacia abajo.</figcaption>
+</figure>
+</div>
+</section>
+<section id="ecuación-de-schrödinger" class="level2">
+<h2 class="anchored" data-anchor-id="ecuación-de-schrödinger">Ecuación de Schrödinger</h2>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-2146247793.png" class="img-fluid figure-img"></p>
+<figcaption>La ecuación de Schrödinger es la herramienta que permite describir el comportamiento cuántico de una partícula. En lugar de decir dónde está un electrón en cada instante, indica cómo se comporta su función de onda, que es la distribución de probabilidad de encontrarlo en distintos puntos del espacio. En su forma más simple relaciona tres ideas: la curvatura de la función de onda, la energía de la partícula y el potencial que la rodea. Cuando estas cantidades se equilibran, aparecen los niveles de energía permitidos. De ese modo, la ecuación explica por qué los electrones ocupan orbitales definidos y por qué los átomos muestran estructuras energéticas discretas.</figcaption>
+</figure>
+</div>
+<hr>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/CN.Q.5.1.5_1.png" class="img-fluid figure-img"></p>
+<figcaption>Para profundizar en los contenidos y alcanzar los resultados de aprendizaje, te invito a tomar tu clase personalizada. No dudes en dejar tus preguntas y comentarios, así como seguirnos en todas nuestras redes. ¡Hasta pronto!</figcaption>
+</figure>
+</div>
+
+
+
+</section>
+
+</main> <!-- /main -->
+&nbsp;
+
+
+<footer style="background-color:	#d0f0ea; padding:1.5em 1em 0.5em; font-family:'Segoe UI', sans-serif; font-size:0.95em; color:#333; margin-bottom: 0;">
+
+  <div style="max-width:960px; margin:0 auto; text-align:center;">
+
+    <p><a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a> – Ingeniero Ambiental | Magíster en Educación</p>
+
+    <p>Asesor educativo, científico y ambiental con más de 10 años de experiencia desarrollando proyectos de investigación, biodiversidad, ciencia de datos ambientales, educación, ciencia ciudadana y divulgación científica.</p>
+
+    <p>¿Necesitas asesoría experta en medio ambiente, educación, biodiversidad y herramientas científicas como <em>R, python, Quarto, Markdown, LaTeX</em> o en <em>Sistemas de Información Geográfica como ArcGIS, QGIS o Google Earth Engine</em>?<br><strong>¡Estoy aquí para ayudarte!</strong></p>
+
+    <p style="margin-top:1em; margin-bottom: 0.5em;">
+
+      <a href="mailto:contacto.envinatu@gmail.com" style="color:#007bff; text-decoration:none;">📩 Contáctame: contacto.envinatu@gmail.com</a><br>
+
+      <a href="https://www.linkedin.com/in/marceloamores" target="_blank" style="color:#007bff; text-decoration:none; display:inline-flex; align-items:center; gap:0.3em;">
+
+        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#007bff" viewbox="0 0 24 24" style="vertical-align:middle;">
+
+          <path d="M4.98 3.5c0 1.38-1.12 2.5-2.5 2.5S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM0 8h5v16H0V8zm7.5 0h4.8v2.2h.07c.67-1.27 2.3-2.6 4.73-2.6C21.3 7.6 24 10.05 24 14.45V24h-5v-8.2c0-1.95-.03-4.45-2.71-4.45-2.71 0-3.13 2.12-3.13 4.3V24h-5V8z"></path>
+
+        </svg>
+
+        Conecta en LinkedIn
+
+      </a>
+
+    </p>
+
+  </div>
+
+</footer>
+
+
+
+<!-- Carrusel de iNaturalist debajo del footer -->
+
+<div class="inat-carousel-container">
+
+  <div id="inat-carousel-track" class="inat-carousel-track"></div>
+
+</div>
+
+
+
+<style>
+
+.inat-carousel-container {
+
+  overflow: hidden;
+
+  width: 100%;
+
+  background: #d0f0ea;
+
+  padding: 10px 0 14px; /* reducido */
+
+  font-family: 'Segoe UI', sans-serif;
+
+  font-size: 0.85em;
+
+  color: #333;
+
+  margin-top: -8px; /* compensación visual mínima */
+
+}
+
+
+
+.inat-carousel-track {
+
+  display: flex;
+
+  gap: 12px;
+
+  animation: scroll-left 100s linear infinite;
+
+  width: max-content;
+
+  padding: 0 1em;
+
+}
+
+
+
+.inat-card {
+
+  flex: 0 0 auto;
+
+  width: 90px;
+
+  text-align: center;
+
+  background: #fff;
+
+  padding: 8px 6px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 6px;
+
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+
+}
+
+
+
+.inat-card img {
+
+  width: 75px;
+
+  height: 75px;
+
+  object-fit: cover;
+
+  border-radius: 4px;
+
+}
+
+
+
+.inat-card .species {
+
+  font-weight: 600;
+
+  font-size: 0.75em;
+
+  margin-top: 4px;
+
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  white-space: nowrap;
+
+}
+
+
+
+.inat-card .date {
+
+  font-size: 0.7em;
+
+  color: #666;
+
+}
+
+
+
+@keyframes scroll-left {
+
+  0% { transform: translateX(0); }
+
+  100% { transform: translateX(-50%); }
+
+}
+
+</style>
+
+
+
+<script>
+
+fetch("https://api.inaturalist.org/v1/observations?user_id=marceloamores&order=desc&order_by=observed_on&per_page=8")
+
+  .then(response => response.json())
+
+  .then(data => {
+
+    const track = document.getElementById("inat-carousel-track");
+
+    const items = data.results.map(obs => {
+
+      const img = obs.photos.length ? obs.photos[0].url.replace("square", "small") : "https://static.inaturalist.org/images/users/defaults/thumb.png";
+
+      const species = obs.taxon ? (obs.taxon.preferred_common_name || obs.taxon.name) : "Sin ID";
+
+      const date = new Date(obs.observed_on).toLocaleDateString("es-EC");
+
+      return `
+
+        <div class="inat-card">
+
+          <a href="https://www.inaturalist.org/observations/${obs.id}" target="_blank" rel="noopener noreferrer">
+
+            <img src="${img}" alt="${species}" />
+
+          </a>
+
+          <div class="species" title="${species}">${species}</div>
+
+          <div class="date">${date}</div>
+
+        </div>`;
+
+    }).join("");
+
+    track.innerHTML = items + items;
+
+  })
+
+  .catch(err => {
+
+    console.error("Error:", err);
+
+  });
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+<hr />
+
+<p style="text-align: center;">Developed and maintained by <a href="https://github.com/envinatu" target="_blank">Marcelo F. Amores Palma</a>. <br>
+
+
+
+
+
+Keen to support the site? You're most welcome to <a href='https://ko-fi.com/I2I1K189U' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi3.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a> </p>
+
+
+
+
+
+
+
+<p style="text-align: center;">For updates, sign up to my <a href="https://github.com/envinatu" target="_blank">newsletter</a></p>
+
+
+
+
+
+<hr>
+
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Add icon library 
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<!-- Add font awesome icons 
+
+<!--<p style="text-align: center;">
+
+<!--    <a href="https://www.linkedin.com/in/marceloamores" class="fa fa-linkedin" target="_blank"></a>
+
+ <!--   <a href="https://www.inaturalist.org/people/marceloamores" target="_blank">
+
+  <img src="https://static.inaturalist.org/wiki_page_attachments/3154-medium.png" alt="iNaturalist" style="width:24px; height:24px;">
+
+    <a href="https://github.com/envinatu" class="fa fa-github" target="_blank"></a>
+
+    <a href="https://x.com/envinatu" target="_blank">
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/X_logo_2023_original.svg/300px-X_logo_2023_original.svg.png" alt="X" style="width:13px; height:13px;">
+
+    <a href="https://www.youtube.com/channel/envinatu" class="fa fa-youtube" target="_blank"></a>
+
+</a>
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<style type="text/css" media="screen">
+
+.inat-widget {padding: 10px; line-height: 1;}
+
+.inat-widget-header {margin-bottom: 10px;}
+
+.inat-widget td {vertical-align: top; padding-bottom: 10px;}
+
+.inat-label { color: #888; }
+
+.inat-meta { font-size: smaller; margin-top: 3px; line-height: 1.2;}
+
+.inat-observation-body, .inat-user-body { padding-left: 10px; }
+
+.inat-observation-image {text-align: center;}
+
+.inat-observation-image, .inat-user-image { width: 48px; display: inline-block; }
+
+.inat-observation-image img, .inat-user-image img { max-width: 48px; }
+
+.inat-observation-image img { vertical-align: middle; }
+
+.inat-widget-small .inat-observation-image { display:block; float: left; margin: 0 3px 3px 0; height:48px;}
+
+.inat-label, .inat-value, .inat-user { font-family: "Trebuchet MS", Arial, sans-serif; }
+
+.inat-user-body {vertical-align: middle;}
+
+.inat-widget td.inat-user-body {vertical-align: middle;}
+
+.inat-widget .inat-footer td.inat-value {vertical-align: middle; padding-left: 10px;}
+
+</style>
+
+<div class="inat-widget">
+
+  
+<table class="inat-footer caption-top" data-quarto-postprocess="true">
+<tbody>
+<tr class="inat-user odd">
+<td class="inat-user-image"><a href="https://www.inaturalist.org/observations/marceloamores" data-border="0"><img src="https://static.inaturalist.org/attachments/users/icons/1116633/thumb.jpg?1628812209" class="usericon img-fluid" /></a></td>
+<td class="inat-value"><strong><a href="https://www.inaturalist.org/observations/marceloamores">Ver las observaciones de Marcelo en iNaturalist »</a></strong></td>
+</tr>
+</tbody>
+</table>
+
+
+  <script type="text/javascript" charset="utf-8" src="https://www.inaturalist.org/observations/marceloamores.widget?layout=large&limit=5&order=desc&order_by=creatrd_at&locale=es"></script>
+
+</div>
+
+
+
+-->
+
+    
+
+
+
+
+
+&nbsp;
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copiado");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copiado");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp("https:\/\/envinatu\.github\.io\/bio27\/");
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../Q1-U1-modelo_atomico/1-1-04-las_reacciones_quimicas_y_sus_ecuaciones_masa_atomica.html" class="pagination-link" aria-label="Las reacciones químicas y sus ecuaciones: masa atómica">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-title">Las reacciones químicas y sus ecuaciones: masa atómica</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../Q1-U1-modelo_atomico/1-1-06-modelo_atomico_modelo_mecanico_cuantico_de_la_materia_ii.html" class="pagination-link" aria-label="Modelo atómico: modelo mecánico-cuántico de la materia (2)">
+        <span class="nav-page-text"><span class="chapter-title">Modelo atómico: modelo mecánico-cuántico de la materia (2)</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<div style="display:inline;">
+©
+<script>document.write(new Date().getFullYear());</script>
+<a href="https://github.com/envinatu"> Marcelo F. Amores Palma</a>
+</div>
+</div>   
+    <div class="nav-footer-center">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/marceloamores/">
+      <i class="bi bi-linkedin" role="img" aria-label="Marcelo Amores LinkedIn">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/envinatu">
+      <i class="bi bi-github" role="img" aria-label="Envinatu GitHub">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/nvinatu">
+      <i class="bi bi-twitter-x" role="img" aria-label="Quarto X">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://youtube.com/envinatu">
+      <i class="bi bi-youtube" role="img" aria-label="Envinatu YouTube">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="mailto:contacto.envinatu@gmail.com">
+      <i class="bi bi-envelope" role="img" aria-label="Email Us">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+    <div class="nav-footer-right">
+<p>Built with <a href="https://quarto.org/">Quarto</a>.</p>
+</div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
